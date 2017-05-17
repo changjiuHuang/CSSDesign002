@@ -1,0 +1,201 @@
+/**
+* fileName: style.css
+*
+* fileRemark：层叠样式表
+*
+* author: changjiu Huang
+*
+* email: 99795427@qq.com
+*
+* create log 2017年5月17日13:20:00
+*
+* update log 2017年5月17日13:30:00
+*
+**/
+
+
+/* basic css */
+body {
+  padding: 0;
+  margin: 0;  
+  font-family:  "Times New Roman", Times, serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #390404;
+  background: #b61e3d url("../images/bkgd.jpg");
+}
+
+
+/* 兄弟选择器 */
+p+p {
+  text-indent: 15px;
+}
+
+
+/* wrapper css */
+.page-wrapper {
+  position: absolute;
+  left: 50%;
+  width: 760px;
+  margin-left: -380px;
+  background: #ffc url("../images/mid.jpg") repeat-y center;
+}
+
+
+.intro {
+  padding-top: 186px;
+  margin: 0;
+  background: url("../images/top.jpg") no-repeat center top;
+}
+
+/* 隐藏h1, h2 */
+header h1, header h2 {
+  display: none;
+}
+
+
+.summary {
+  margin-top: 30px;
+}
+
+.summary p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+
+
+/* 布局在右边 */
+.summary, 
+.preamble,
+.supporting {
+  margin-right: 80px;
+  margin-left: 300px;
+}
+
+
+.supporting p:nth-Child(6) {
+  height: 30px;
+  margin-left: -300px;
+  margin-right: -80px;
+  margin-top: 30px;
+  text-align: center;
+  background: url("../images/line.jpg") no-repeat center bottom;
+}
+
+h3 {
+  font-size: 13px;
+  margin-top: 4em;
+}
+
+
+/* footer css*/
+
+/* 为footer底部添加背景图片 */
+footer {
+  height: 110px;
+  margin-left: -300px;
+  margin-right: -80px;
+  text-align: center;
+  background: url("../images/bot.jpg") no-repeat center bottom;
+}
+
+footer a:before  {
+content: "{";
+}
+
+footer a:after {
+content: "}";
+}
+
+footer a:link {
+  font-size: 15px;
+  color: #390404;
+}
+
+
+/* sidebar css */
+.sidebar {
+  position: absolute;
+  left: 90px;
+  top: 200px;
+  width: 195px;
+  border-right: 1px dotted #930;
+  padding-bottom: 150px;
+  background: url("../images/b5.jpg") no-repeat center bottom;
+}
+
+
+.sidebar h3 {
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.sidebar h3:before {
+  content: "(";
+}
+
+.sidebar h3:after {
+  content: ")";
+}
+
+.sidebar h3.select {
+  padding-top: 110px;
+  margin-top: 0;
+  background: url("../images/b1.jpg") no-repeat center top;
+}
+
+.sidebar h3.archives {
+  padding-top: 110px;
+  margin-top: 30px;
+  background: url("../images/b3.jpg") no-repeat center top;
+}
+
+.sidebar h3.resources {
+  padding-top: 110px;
+  margin-top: 30px;
+  background: url("../images/b4.jpg") no-repeat center top;
+}
+
+
+.sidebar ul {
+  padding: 0;
+  margin: -0.5em 0 0 0;
+  list-style: none;
+  text-align: center;
+}
+
+.sidebar ul li {
+  padding-bottom: 15px;
+  background: url("../images/listline.gif") no-repeat center bottom;
+}
+
+.sidebar .design-selection a {
+  display: block;  
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sidebar .design-selection a.designer-name {
+  display: inline;
+  margin-bottom: -1em;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0em;
+}
+
+a:link, a:visited {
+  font-style: italic;
+  text-decoration: none;
+  color: #039
+}
+
+a:visited {
+  font-style: normal
+}
+
+a:hover, a:active {
+  background: #ffe699;
+}
